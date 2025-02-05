@@ -1,0 +1,100 @@
+body { 
+    background-size: contain;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: hsl(242, 26%, 30%);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #DDA0DD; /* Morado oscuro */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    display: flex;
+    justify-content: flex-start; /* Alinea a la izquierda */
+    align-items: center; /* Centra el contenido verticalmente */
+    background: linear-gradient(135deg, #D8BFD8, #BA55D3); /* Morado claro y oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 30px; /* Añade espacio entre el logo y el texto */
+}
+
+header img {
+    margin-right: 20px; /* Espacio entre el logo y el texto */
+    max-height: 80px; /* Ajusta el tamaño del logo */
+    width: auto; /* Mantiene la proporción original */
+}
+
+header h1, header p {
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+.question {
+    background: #f4efeb; /* Morado claro */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.question:hover {
+    transform: scale(1.05);
+}
+
+.options {
+    text-align: left; /* Alinea las opciones a la izquierda */
+    padding-left: 20px; /* Añade un pequeño margen para que no esté tan pegado */
+}
+
+.options label {
+    display: block;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out; /* Para suavizar el movimiento */
+    font-size: 1.1em;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    position: relative; /* Para permitir mover el elemento */
+}
+
+/* Movimiento al pasar el ratón */
+.options label:hover {
+    background: #D8BFD8;  /* Morado claro */
+    color: white;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(186, 85, 211, 0.8); /* Resplandor morado */
+    transform: translateX(10px); /* Mover 10px a la derecha */
+}
+
+/* Ajuste para el div morado de la imagen */
+.image-placeholder {
+    background: hsl(242, 26%, 30%); /* Morado más oscuro */
+    padding: 10px; /* Añade un pequeño margen alrededor de la imagen */
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Corrigiendo el box-shadow */
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+/* Aquí es donde se asegura que la imagen ocupe todo el espacio dentro del div, sin que se agrande ni distorsione */
+.image-placeholder img {
+    width: 100%; /* Hace que la imagen ocupe todo el div */
+    object-fit: contain; /* Hace que la imagen se recorte para cubrir todo el espacio sin distorsionarse */
+    border-radius: 10px;
+    max-height: 150px;
+    height: auto;
+}
